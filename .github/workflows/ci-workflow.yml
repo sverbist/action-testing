@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Running ls
+      - uses: actions/checkout@v2
         run: ls -la --color --group-directories-first
   my_npm_job:
     name: Run npm tests
