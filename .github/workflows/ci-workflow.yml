@@ -5,7 +5,7 @@ jobs:
     name: My first Job
     runs-on: ubuntu-latest
     steps:
-      - name: My first step
+        name: My first step
         run: echo Hello, world!
   check_directory:
     name: Checking the file check_directory
