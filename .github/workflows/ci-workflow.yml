@@ -11,8 +11,9 @@ jobs:
     name: Checking the file check_directory
     runs-on: ubuntu-latest
     steps:
-      - name: Running ls
+      - name: Checking out git
         uses: actions/checkout@v2
+      - name: Checking directory
         run: ls -la --color --group-directories-first
   my_npm_job:
     name: Run npm tests
